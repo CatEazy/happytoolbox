@@ -472,7 +472,7 @@ echo               文件解密工具
 echo =================================================
 set /p decrypt_file="请输入解密文件路径: "
 certutil -decode "%decrypt_file%" "%decrypt_file:.enc=%"
-del /q "%decrypt_file%"
+del /F "%decrypt_file%"
 echo.
 echo 文件已成功解密并清理源文件！
 echo.
